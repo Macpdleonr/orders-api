@@ -55,6 +55,7 @@ php artisan migrate
 ```
 
 ### 5. Levantar el servidor:
+
 ```bash
 php artisan serve
 ```
@@ -103,15 +104,16 @@ Esta sección describe los endpoints disponibles para la gestión de **Pedidos**
 #### **Listar pedidos** (`GET /api/v1/orders`)
 
 **Respuesta (200 OK):**
+
 ```json
 [
-  {
-    "id": 1,
-    "name": "Jose Test",
-    "amount": 130.45,
-    "status": "pending",
-    "payments": []
-  }
+    {
+        "id": 1,
+        "name": "Jose Test",
+        "amount": 130.45,
+        "status": "pending",
+        "payments": []
+    }
 ]
 ```
 
@@ -121,8 +123,8 @@ Esta sección describe los endpoints disponibles para la gestión de **Pedidos**
 
 ```json
 {
-  "name": "Jose Test",
-  "amount": 130.45
+    "name": "Jose Test",
+    "amount": 130.45
 }
 ```
 
@@ -130,13 +132,13 @@ Esta sección describe los endpoints disponibles para la gestión de **Pedidos**
 
 ```json
 {
-  "data": {
-    "id": 1,
-    "name": "Jose Test",
-    "amount": 130.45,
-    "status": "pending",
-    "payments": []
-  }
+    "data": {
+        "id": 1,
+        "name": "Jose Test",
+        "amount": 130.45,
+        "status": "pending",
+        "payments": []
+    }
 }
 ```
 
@@ -152,13 +154,13 @@ Esta sección describe los endpoints disponibles para la gestión de **Pedidos**
 
 ```json
 {
-  "data": {
-    "id": 1,
-    "amount": 130.45,
-    "success": true,
-    "external_transaction_id": "tx_123",
-    "response_payload": {"id":"tx_123"}
-  }
+    "data": {
+        "id": 1,
+        "amount": 130.45,
+        "success": true,
+        "external_transaction_id": "tx_123",
+        "response_payload": {"id":"tx_123"}
+    }
 }
 ```
 
